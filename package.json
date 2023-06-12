@@ -1,0 +1,66 @@
+{
+  "name": "mind-ar-react",
+  "version": "0.1.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build:vite": "tsc && vite build",
+    "build:prod": "tsc --project tsconfig.build.json",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "peerDependencies": {
+    "aframe": "^1.4.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {
+    "aframe-react-component": "^0.1.1",
+    "lodash": "^4.17.21",
+    "mind-ar-react": "^0.1.1",
+    "mind-ar-ts": "^0.5.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/aframe": "^1.2.0",
+    "@types/lodash": "^4.14.182",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "@vitejs/plugin-react": "^2.0.1",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.1",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "react-dropzone": "^14.2.1",
+    "typescript": "^4.6.3",
+    "vite": "^3.0.2"
+  },
+  "description": "A Mind AR Modules for React",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krsbx/mind-ar-react.git"
+  },
+  "keywords": [
+    "react",
+    "augmented-reality",
+    "mind-ar"
+  ],
+  "author": "krsbx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krsbx/mind-ar-react/issues"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --cache --fix",
+    "*.{ts,tsx,scss,md}": "prettier --write"
+  },
+  "files": [
+    "dist"
+  ]
+}
